@@ -1,0 +1,19 @@
+{
+  "name": "swa-bank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bank app demo built with vanilla HTML5, CSS and JavaScript and Azure Functions for the API",
+  "scripts": {
+    "start": "swa start",
+    "deploy": "swa deploy --env production"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "github:Azure/static-web-apps-cli#ga"
+  }
+}

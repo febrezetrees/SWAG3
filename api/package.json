@@ -1,0 +1,21 @@
+{
+  "name": "bank-api",
+  "version": "1.0.0",
+  "description": "Bank API",
+  "private": true,
+  "scripts": {
+    "start": "func start",
+    "lint": "eslint",
+    "format": "prettier --single-quote --write **/*.js **/*.json"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "prettier": "^2.0.5"
+  }
+}

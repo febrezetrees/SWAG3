@@ -1,4 +1,3 @@
-const { URLSearchParams } = require('url');
 const crypto = require('crypto');
 
 // Store data in-memory, not suited for production use!
@@ -20,20 +19,18 @@ const db = {
 
 // Create an account
 function createAccount({ req, res }) {
-  const body = Object.fromEntries(new URLSearchParams(req.rawBody));
-
   // Check mandatory request parameters
-  if (!body.user || !body.currency) {
+  if (!req.body.user || !req.body.currency) {
     return res.status(400).json({ error: 'Missing parameters' });
   }
 
   // Check if account already exists
-  if (db[body.user]) {
+  if (db[req.body.user]) {
     return res.status(409).json({ error: 'User already exists' });
   }
 
   // Convert balance to number if needed
-  let balance = body.balance;
+  let balance = req.body.balance;
   if (balance && typeof balance !== 'number') {
     balance = parseFloat(balance);
     if (isNaN(balance)) {
@@ -43,13 +40,13 @@ function createAccount({ req, res }) {
 
   // Create account
   const account = {
-    user: body.user,
-    currency: body.currency,
-    description: body.description || `${body.user}'s budget`,
+    user: req.body.user,
+    currency: req.body.currency,
+    description: req.body.description || `${req.body.user}'s budget`,
     balance: balance || 0,
     transactions: [],
   };
-  db[body.user] = account;
+  db[req.body.user] = account;
 
   return res.status(201).json(account);
 }

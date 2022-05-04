@@ -6,9 +6,13 @@ GET http://localhost:7071/api/
 ###
 
 POST http://localhost:7071/api/accounts/
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
-user=sinedied&currency=$&balance=50
+{
+  "user": "sinedied",
+  "currency": "$",
+  "balance": 50
+}
 
 ###
 

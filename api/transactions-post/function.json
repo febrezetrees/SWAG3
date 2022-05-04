@@ -6,7 +6,7 @@
       "direction": "in",
       "name": "req",
       "methods": ["post"],
-      "routes": "/accounts/{user}/transactions"
+      "route": "accounts/{user}/transactions"
     },
     {
       "type": "http",

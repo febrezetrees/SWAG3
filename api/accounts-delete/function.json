@@ -6,7 +6,7 @@
       "direction": "in",
       "name": "req",
       "methods": ["delete"],
-      "routes": "/accounts/{user}"
+      "route": "accounts/{user}"
     },
     {
       "type": "http",

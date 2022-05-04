@@ -1,5 +1,5 @@
-const { getTransaction } = require('../shared');
+const { createTransaction } = require('../shared');
 
 module.exports = async function (context) {
-  getTransaction(context);
+  createTransaction(context);
 };

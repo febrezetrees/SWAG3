@@ -2,7 +2,7 @@
 // Constants
 // ---------------------------------------------------------------------------
 
-const serverUrl = 'http://localhost:7071/api';
+const serverUrl = '/api';
 const storageKey = 'savedAccount';
 
 // ---------------------------------------------------------------------------

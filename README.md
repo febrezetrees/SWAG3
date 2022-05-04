@@ -2,11 +2,11 @@
 
 > Example solution for the bank app project of the [Web Dev for Beginners curriculum](https://github.com/microsoft/Web-Dev-For-Beginners), built with vanilla HTML5, CSS and JavaScript (no frameworks or libraries used) and using a serverless API built with [Azure Functions](https://azure.microsoft.com/services/functions/?WT.mc_id=javascript-0000-yolasors).
 
-## Running the app
+## Running the app locally
 
 1. Git clone this repo.
-2. Open a terminal, then run `npm install`. It will start a development web server on port `3000`
-3. Open `http://localhost:3000` in a browser to run the app.
+2. Open a terminal, then run `npm install`. It will start a development web server on port `4280`
+3. Open `http://localhost:4280` in a browser to run the app.
 
 ## Deploying on Azure Static Web apps
 

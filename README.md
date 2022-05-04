@@ -12,8 +12,7 @@
 
 > What's Azure Static Web Apps? It's an all-inclusive hosting service for web apps providing features like continuous deployment, serverless APIs, authentication and more. And it has a free tier!
 
-Prerequisites:
-- An [Azure account](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-cxa) (you can create one for free).
+**Prerequisites:** You need an [Azure account](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-cxa) (you can create one for free).
 
 1. Once you've created your Azure account, open a terminal and run the following command:
   ```sh

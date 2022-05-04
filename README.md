@@ -20,6 +20,10 @@ Prerequisites:
   npm run deploy
   ```
 2. When asked, log in to your Azure account.
-3. When asked, select the Azure Static Web Apps subscription.
+3. If you're asked to choose your Static Web App, select **>> Create a new application** and enter a name.
+4. Wait until your app is deployed, and you'll see the URL of your app in terminal:
+```sh
+✔ Project deployed to https://purple-bush-12345678.1.azurestaticapps.net 🚀
+```
 
 You can find tutorials on using Static Web Apps [here](https://docs.microsoft.com/learn/paths/azure-static-web-apps/?WT.mc_id=javascript-0000-cxa).

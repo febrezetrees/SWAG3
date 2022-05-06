@@ -14,6 +14,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@azure/static-web-apps-cli": "github:Azure/static-web-apps-cli#ga"
+    "@azure/static-web-apps-cli": "^0.8.3"
   }
 }
